@@ -4,6 +4,6 @@ tags={
 	"Buildings"
 }
 name="Orbital Ring Buildings"
-picture="orb.png"
+picture=thumbnail.png"
 supported_version="3.4.*"
 remote_file_id="2818034573"
