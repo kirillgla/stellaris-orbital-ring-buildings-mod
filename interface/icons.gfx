@@ -2493,6 +2493,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_orbitalring_refinery_hub"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_refinery.dds"
+	}
+
+	spriteType = {
 		name = "GFX_orbitalring_synapse_hub"
 		texturefile = "gfx/interface/icons/modules/orbitalring_synapse_hub.dds"
 	}
