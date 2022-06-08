@@ -2498,6 +2498,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_orbitalring_aegis"
+		texturefile = "gfx/interface/icons/modules/orbitalring_aegis.dds"
+	}
+
+	spriteType = {
 		name = "GFX_orbitalring_synapse_hub"
 		texturefile = "gfx/interface/icons/modules/orbitalring_synapse_hub.dds"
 	}

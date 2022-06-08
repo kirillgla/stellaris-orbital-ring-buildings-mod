@@ -160,7 +160,9 @@
  sm_ring_research_hub:0 "Microgravity Research Labs"
  sm_ring_research_hub_desc:1 "With easy access to microgravity environments, planetary researchers are able to work more efficiently."
  sm_ring_refinery_hub:0 "Strategic Orbital Resource Depot"
- sm_ring_refinery_hub_desc:1 "On-Orbit infrastructure maximizes the produciton of strategic resources by reducing infrastructure overhead"
+ sm_ring_refinery_hub_desc:1 "On-Orbit infrastructure maximizes the produciton of strategic resources by reducing infrastructure overhead."
+ sm_ring_shield:0 "AEGIS System"
+ sm_ring_shield_desc:1 "Powerful shield generators provide additional defence against orbital bombardment."
  mod_planet_researchers_minerals_upkeep_add:0 "£minerals£ Minerals upkeep of £job_brain_drone£ $job_brain_drone_plural$"
  mod_planet_researchers_energy_upkeep_add:0 "£energy£ Energy upkeep of £calculator£ $job_calculator_plural$"
 
