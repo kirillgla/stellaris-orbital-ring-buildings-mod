@@ -111,7 +111,6 @@ ring_refinery_hub = {
 		}
 	}
 
-
 	ai_weight = {
 		weight = 0
 	}
@@ -142,5 +141,11 @@ ring_shield = {
 		upkeep = {
 			energy = 50
 		}
+	}
+
+	show_in_tech = "tech_planetary_shield_generator"
+
+	ai_weight {
+	    weight = 0
 	}
 }
