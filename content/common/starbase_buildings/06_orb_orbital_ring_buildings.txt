@@ -228,3 +228,50 @@ organic_convenience_infrastructure = {
 		weight = 0
 	}
 }
+
+ring_maintenance_hub = {
+	icon = "GFX_orbitalring_maintenance_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+		    OR = {
+		        AND = {
+			        has_technology = tech_resource_processing_algorithms
+			        is_machine_empire = yes
+			    }
+			    AND = {
+			        is_hive_empire = yes
+			        has_technology = tech_hive_cluster
+			    }
+			}
+		}
+		is_orbital_ring = yes
+	}
+
+	planet_modifier = {
+		custom_tooltip = "sm_ring_maintenance_hub_effect"
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			exotic_gases = 300
+		}
+
+		upkeep = {
+			energy = 2
+			exotic_gases = 1
+		}
+	}
+
+	show_in_tech = "tech_resource_processing_algorithms"
+	show_in_tech = "tech_hive_cluster"
+
+
+	ai_weight = {
+		weight = 100
+	}
+}
