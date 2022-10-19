@@ -5,4 +5,4 @@ tags={
 }
 name="Orbital Ring Buildings Updated"
 picture=thumbnail.png"
-supported_version="3.5.*"
+supported_version="3.*"
