@@ -167,6 +167,7 @@ ring_coordination_system = {
 	}
 
 	planet_modifier = {
+	    custom_tooltip = "ring_coordination_system_effect"
 		planet_coordinators_unity_produces_add = 1
 	}
 
