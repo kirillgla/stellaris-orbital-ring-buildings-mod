@@ -1,9 +1,8 @@
-version="0.1"
+version="0.2"
 tags={
 	"Balance"
 	"Buildings"
 }
-name="Orbital Ring Buildings"
+name="Orbital Ring Buildings Updated"
 picture=thumbnail.png"
-supported_version="3.4.*"
-remote_file_id="2818034573"
+supported_version="3.5.*"
