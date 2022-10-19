@@ -149,3 +149,83 @@ ring_shield = {
 	    weight = 0
 	}
 }
+
+ring_coordination_system = {
+	icon = "GFX_orbitalring_bureaucracy_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_adaptive_bureaucracy
+			is_machine_empire = yes
+			NOT = {
+				has_civic = civic_machine_servitor
+			}
+		}
+		is_orbital_ring = yes
+	}
+
+	planet_modifier = {
+		custom_tooltip = "ring_coordination_system_effect"
+		planet_administrators_unity_produces_add = 1
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			rare_crystals = 300
+		}
+
+		upkeep = {
+			energy = 2
+			rare_crystals = 1
+		}
+	}
+
+	show_in_tech = "tech_adaptive_bureaucracy"
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+organic_convenience_infrastructure = {
+	icon = "GFX_building_paradise_dome"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_adaptive_bureaucracy
+			is_machine_empire = yes
+			has_civic = civic_machine_servitor
+		}
+		is_orbital_ring = yes
+	}
+
+	planet_modifier = {
+		custom_tooltip = "organic_convenience_infrastructure_effect"
+		planet_bio_trophies_unity_produces_add = 1
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			rare_crystals = 300
+		}
+
+		upkeep = {
+			energy = 2
+			rare_crystals = 1
+		}
+	}
+
+	show_in_tech = "tech_adaptive_bureaucracy"
+
+	ai_weight = {
+		weight = 0
+	}
+}
