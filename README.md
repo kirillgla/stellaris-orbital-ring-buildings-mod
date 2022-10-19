@@ -1,0 +1,1 @@
+This is the 'Orbital Ring Buildings Updated' mod for Stellaris
