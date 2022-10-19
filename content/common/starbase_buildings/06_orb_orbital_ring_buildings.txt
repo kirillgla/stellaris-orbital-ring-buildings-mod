@@ -167,8 +167,7 @@ ring_coordination_system = {
 	}
 
 	planet_modifier = {
-		custom_tooltip = "ring_coordination_system_effect"
-		planet_administrators_unity_produces_add = 1
+		planet_coordinators_unity_produces_add = 1
 	}
 
 	resources = {
@@ -206,7 +205,6 @@ organic_convenience_infrastructure = {
 	}
 
 	planet_modifier = {
-		custom_tooltip = "organic_convenience_infrastructure_effect"
 		planet_bio_trophies_unity_produces_add = 1
 	}
 
