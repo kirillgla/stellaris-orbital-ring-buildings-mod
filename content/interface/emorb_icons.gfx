@@ -1,0 +1,21 @@
+spriteTypes = {
+    spriteType = {
+    	name = "GFX_surveillance_hub"
+    	textureFile = "gfx/interface/icons/modules/surveillance_hub.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_module_solar"
+    	textureFile = "gfx/interface/icons/modules/module_solar.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_orbital_depot"
+    	textureFile = "gfx/interface/icons/modules/orbital_depot.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_hab_housing"
+    	textureFile = "gfx/interface/icons/modules/hab_housing.dds"
+    }
+}
