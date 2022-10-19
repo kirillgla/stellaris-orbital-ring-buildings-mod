@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_orbitalring_research_hub"
+		texturefile = "gfx/interface/icons/modules/orbitalring_research_hub.dds"
+	}
+
+	spriteType = {
+		name = "GFX_orbitalring_refinery_hub"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_refinery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_orbitalring_aegis"
+		texturefile = "gfx/interface/icons/modules/orbitalring_aegis.dds"
+	}
+}
