@@ -1,0 +1,278 @@
+building_institute = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	category = research
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+		exists = owner
+		owner = { is_regular_empire = yes }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+			owner = { is_regular_empire = no }
+		}
+	}
+
+	convert_to = {
+		building_supercomputer
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+		    trigger = {
+		        is_ringworld = no
+		    }
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		cost = {
+		    trigger = {
+		        is_ringworld = yes
+		    }
+		    minerals = 1500
+		    exotic_gases = 600
+		}
+		upkeep = {
+		    trigger = {
+		        is_ringworld = no
+		    }
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+		upkeep = {
+		    trigger = {
+		        is_ringworld = yes
+		    }
+		    energy = 15
+		    exotic_gases = 8
+		}
+	}
+
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.15
+		job_head_researcher_add = 1
+	}
+
+	triggered_planet_modifier = {
+	    potential = {
+	        is_ringworld = yes
+	    }
+	    modifier = {
+	        planet_researchers_physics_research_produces_add = 1
+            planet_researchers_engineering_research_produces_add = 1
+            planet_researchers_society_research_produces_add = 1
+            planet_researchers_consumer_goods_upkeep_add = 1
+	    }
+	}
+
+	prerequisites = {
+		"tech_global_research_initiative"
+	}
+
+	triggered_desc = {
+		text = job_head_researcher_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 30
+			}
+		}
+		physics_research = 5
+		society_research = 5
+		engineering_research = 5
+	}
+}
+
+building_supercomputer = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	icon = building_institute
+
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+			owner = { is_regular_empire = yes }
+		}
+	}
+
+	convert_to = {
+		building_institute
+	}
+
+	resources = {
+		category = planet_buildings
+        cost = {
+		    trigger = {
+		        is_ringworld = no
+		    }
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		cost = {
+		    trigger = {
+		        is_ringworld = yes
+		    }
+		    minerals = 1500
+		    exotic_gases = 600
+		}
+		upkeep = {
+		    trigger = {
+		        is_ringworld = no
+		    }
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+		upkeep = {
+		    trigger = {
+		        is_ringworld = yes
+		    }
+		    energy = 15
+		    exotic_gases = 8
+		}
+	}
+
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 1
+		}
+	}
+
+    triggered_planet_modifier = {
+		potential = {
+		    is_ringworld = yes
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			planet_researchers_physics_research_produces_add = 1
+			planet_researchers_engineering_research_produces_add = 1
+			planet_researchers_society_research_produces_add = 1
+			planet_researchers_minerals_upkeep_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_add = 1
+		}
+	}
+
+    triggered_planet_modifier = {
+		potential = {
+		    is_ringworld = yes
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			planet_researchers_physics_research_produces_add = 1
+			planet_researchers_engineering_research_produces_add = 1
+			planet_researchers_society_research_produces_add = 1
+			planet_researchers_energy_upkeep_add = 2
+		}
+	}
+
+	prerequisites = {
+		"tech_global_research_initiative"
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_calculator_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_gestalt = yes
+	}
+
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 20
+			}
+		}
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
+	}
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 40
+			}
+		}
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
+	}
+}
