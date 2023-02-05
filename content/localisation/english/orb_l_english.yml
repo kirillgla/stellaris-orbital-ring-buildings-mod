@@ -21,3 +21,4 @@
  sm_orbital_ring_depot_desc: "Through the repurposing of strike craft designs, resources can easily be distributed across the planet surface. Guaranteed delivery of two hours or less for orders of 2 tons or more."
  sm_orbital_ring_habitat: "Orbital Habitat Module"
  sm_orbital_ring_habitat_desc: "Massive housing units that would be impossible in regular gravity of the planet below. Extensive network of high-speed space elevators connect it to every important location on the surface."
+ ring_refinery_hub_effect: "£volatile_motes£ $volatile_motes$ from £job_chemist£ $job_chemist_plural$: §G+0.5§!\n£exotic_gases£ $exotic_gases$ from £job_gas_refiner£ $job_gas_refiner_plural$: §G+0.5§!\n£rare_crystals£ $rare_crystals$ from £job_translucer£ $job_translucer_plural$: §G+0.5§!\n£minerals£ $minerals$ Upkeep of £job_chemist£ £job_gas_refiner£ £job_translucer£ Refiners: §R+5§!"

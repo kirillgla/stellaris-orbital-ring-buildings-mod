@@ -22,3 +22,42 @@ planet_bio_trophies = {
 	}
 	modifier_category = pop
 }
+
+planet_refiners = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+	    produces
+	    upkeep
+	}
+	modifier_category = pop
+}
+
+planet_translucers = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+    generate_add_modifiers = {
+	    produces
+	    upkeep
+	}
+	modifier_category = pop
+}
+
+planet_chemists = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+    generate_add_modifiers = {
+	    produces
+	    upkeep
+	}
+	modifier_category = pop
+}
