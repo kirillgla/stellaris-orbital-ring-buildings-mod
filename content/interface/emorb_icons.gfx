@@ -10,11 +10,6 @@ spriteTypes = {
     }
 
     spriteType = {
-    	name = "GFX_orbital_depot"
-    	textureFile = "gfx/interface/icons/modules/orbital_depot.dds"
-    }
-
-    spriteType = {
     	name = "GFX_hab_housing"
     	textureFile = "gfx/interface/icons/modules/hab_housing.dds"
     }
