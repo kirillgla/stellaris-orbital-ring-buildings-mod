@@ -71,7 +71,7 @@ building_institute = {
 
 	triggered_planet_modifier = {
 	    potential = {
-	        is_ringworld = yes
+	        has_ringworld_output_boost = yes
 	    }
 		modifier = {
 			planet_researchers_physics_research_produces_add = 1
