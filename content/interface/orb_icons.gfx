@@ -11,11 +11,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_orbitalring_aegis"
-		texturefile = "gfx/interface/icons/modules/orbitalring_aegis.dds"
-	}
-
-	spriteType = {
     	name = "GFX_building_paradise_dome"
     	textureFile = "gfx/interface/icons/modules/district_arcology_organic_housing.dds"
     }

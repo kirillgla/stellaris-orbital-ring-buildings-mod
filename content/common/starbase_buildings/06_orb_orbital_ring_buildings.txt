@@ -119,40 +119,6 @@ ring_refinery_hub = {
 	}
 }
 
-ring_shield = {
-	icon = "GFX_orbitalring_aegis"
-	construction_days = 360
-
-	potential = {
-		exists = owner
-		owner = {
-			has_technology = tech_planetary_shield_generator
-		}
-		is_orbital_ring = yes
-	}
-
-	planet_modifier = {
-		planet_orbital_bombardment_damage = -0.25
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 400
-		}
-
-		upkeep = {
-			energy = 50
-		}
-	}
-
-	show_in_tech = "tech_planetary_shield_generator"
-
-	ai_weight {
-	    weight = 0
-	}
-}
-
 ring_coordination_system = {
 	icon = "GFX_orbitalring_bureaucracy_hub"
 	construction_days = 360
